@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane stylesheets="@../css/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReservationController">
+   <center>
+      <Pane prefHeight="616.0" prefWidth="1010.0" styleClass="body" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="TitrePrincipale" layoutX="320.0" layoutY="37.0" styleClass="TitreAccueil" text="Nouvelle réservation" />
+            <Button fx:id="btnAccueil" layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#onClickAccueil" prefHeight="60.0" prefWidth="148.0" text="ACCUEIL" />
+            <RadioButton fx:id="btnParticulier" layoutX="291.0" layoutY="142.0" mnemonicParsing="false" onMouseClicked="#onClickParticulier" selected="true" text="Particulier">
+               <toggleGroup>
+                  <ToggleGroup fx:id="typeReservation" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="btnProfessionnel" layoutX="610.0" layoutY="143.0" mnemonicParsing="false" onMouseClicked="#onClickProfessionnel" text="Professionnel" toggleGroup="$typeReservation" />
+            <TextField fx:id="inputNom" layoutX="253.0" layoutY="223.0" onKeyReleased="#getTelephoneParticulierByName" styleClass="zoneDeSaisie" />
+            <TextField fx:id="inputPrenom" layoutX="575.0" layoutY="224.0" onKeyReleased="#getTelephoneParticulierByName" styleClass="zoneDeSaisie" />
+            <Label fx:id="labelNom" layoutX="319.0" layoutY="195.0" text="Nom" />
+            <Label fx:id="labelPrenom" layoutX="640.0" layoutY="195.0" text="Prenom" />
+            <TextField fx:id="inputTelephone" layoutX="412.0" layoutY="392.0" styleClass="zoneDeSaisie" />
+            <Label layoutX="462.0" layoutY="365.0" text="Téléphone" />
+            <Label layoutX="482.0" layoutY="272.0" text="Date" />
+            <TextField fx:id="inputNbPersonne" layoutX="166.0" layoutY="310.0" onKeyReleased="#verifTableDispo" styleClass="zoneDeSaisie" />
+            <Label layoutX="178.0" layoutY="277.0" text="Nombre de personne" />
+            <Label layoutX="312.0" layoutY="450.0" text="Table disponible : " />
+            <Button fx:id="btnAjouterReservation" layoutX="370.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#validerAjoutReservation" prefHeight="85.0" prefWidth="269.0" text="AJOUTER LA RESERVATION" />
+            <TextField fx:id="inputNomSociete" layoutX="402.0" layoutY="224.0" onKeyReleased="#getTelephoneProfessionnelByName" prefHeight="30.0" prefWidth="204.0" styleClass="zoneDeSaisie" visible="false" />
+            <Label fx:id="labelNomSociete" layoutX="450.0" layoutY="195.0" text="Nom de société" visible="false" />
+            <DatePicker fx:id="inputDate" layoutX="412.0" layoutY="299.0" onAction="#verifTableDispo" prefHeight="40.0" prefWidth="188.0" styleClass="zoneDeSaisie" />
+            <ComboBox fx:id="inputHeure" layoutX="660.0" layoutY="296.0" prefHeight="22.0" prefWidth="150.0" styleClass="zoneDeSaisie" />
+            <Label layoutX="714.0" layoutY="269.0" text="Heure" />
+            <Label fx:id="labelTableDispo" layoutX="444.0" layoutY="450.0" text="Label" visible="false" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

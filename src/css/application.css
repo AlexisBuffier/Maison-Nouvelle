@@ -1,0 +1,108 @@
+/**************************** FOND ******************************/
+.body 
+{
+    -fx-background-color: #efe7d8;
+}
+
+/**************************** BOUTON ****************************/
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #d7a45e, #a36b46);
+    -fx-text-fill: #fff;
+    -fx-padding: 15 30 15 30;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);
+    -fx-border-color: #161616;
+    -fx-border-width: 1px;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #e7b166, #b8784e);
+}
+
+.button:pressed {
+    -fx-translate-y: 2;
+    -fx-background-color: linear-gradient(to bottom, #a36b46, #d7a45e);
+}
+
+/**************************** TITRE ****************************/
+
+#TitrePrincipale {
+    -fx-font-size: 38px; 
+    -fx-font-weight: bold;
+    -fx-text-fill: #ab713b; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 2);
+}
+
+/**************************** ZONE DE TEXTE ****************************/
+
+.zoneDeSaisie {
+    -fx-background-color: #F1E6E6;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0, 0, 0);
+    -fx-border-color: #b0b0b0;
+    -fx-border-width: 1px;
+    -fx-padding: 4 8 4 8;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.zoneDeSaisie:focused {
+    -fx-border-color: #d7a45e;
+    -fx-border-width: 2px;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #F1E6E6;
+}
+
+
+/**************************** LABEL ****************************/
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #d7a45e;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.3), 3, 0, 0, 1);
+    -fx-font-weight: bold; 
+}
+
+/**************************** TABLE ****************************/
+
+.tableListeReservation {
+    -fx-background-color: #F1F1F1; 
+    -fx-border-color: #b0b0b0; 
+    -fx-border-width: 1px; 
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 5, 0, 0, 0);
+}
+
+.tableListeReservation .table-column {
+    -fx-alignment: center; 
+    -fx-font-size: 14px; 
+    -fx-font-weight: bold; 
+}
+
+.tableListeReservation .table-row-cell {
+    -fx-background-color: white; 
+    -fx-border-color: transparent; 
+    -fx-alignment: center;
+}
+
+.tableListeReservation .table-row-cell:selected {
+    -fx-background-color: #8fbfc4; 
+}
+
+/**************************** COMBOBOX ****************************/
+
+.combo-box .list-cell 
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+}
+
+
+

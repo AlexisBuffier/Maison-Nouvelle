@@ -1,0 +1,47 @@
+{  
+    "reservation1": {  
+        "nom":       "Buffier",   
+        "prenom":    "Alexis",
+        "nomSociete": "",
+        "telephone": "07 23 45 67 01",
+        "dateReservation": "2024-01-24",   
+        "nbPersonne": 3,
+        "heureReservation": "12h30"
+    },  
+    "reservation2": {  
+        "nom":       "",   
+        "prenom":    "",
+        "nomSociete": "hydro",
+        "telephone": "06 56 54 56 46",
+        "dateReservation": "2024-01-24",   
+        "nbPersonne": 2,
+        "heureReservation": "12h30"
+    },  
+    "reservation3": {  
+        "nom":       "Echaniz",   
+        "prenom":    "Valentin",
+        "nomSociete": "",
+        "telephone": "06 12 34 56 00",
+        "dateReservation": "2024-01-25",   
+        "nbPersonne": 4,
+        "heureReservation": "12h30"
+    },  
+    "reservation4": {  
+        "nom":       "",   
+        "prenom":    "",
+        "telephone": "06 58 31 25 46",
+        "nomSociete": "eRegroupe",
+        "dateReservation": "2024-01-25",   
+        "nbPersonne": 7,
+        "heureReservation": "12h30"
+    },
+    "reservation5": {  
+        "nom":       "Doe",   
+        "prenom":    "John",
+        "nomSociete": "",
+        "telephone": "06 35 48 21 54",
+        "dateReservation": "2024-01-25",   
+        "nbPersonne": 2,
+        "heureReservation": "12h40"
+    } 
+}  
