@@ -37,7 +37,7 @@
             <DatePicker fx:id="inputDate" layoutX="412.0" layoutY="299.0" onAction="#verifTableDispo" prefHeight="40.0" prefWidth="188.0" styleClass="zoneDeSaisie" />
             <ComboBox fx:id="inputHeure" layoutX="660.0" layoutY="296.0" prefHeight="22.0" prefWidth="150.0" styleClass="zoneDeSaisie" />
             <Label layoutX="714.0" layoutY="269.0" text="Heure" />
-            <Label fx:id="labelTableDispo" layoutX="444.0" layoutY="450.0" text="Label" visible="false" />
+            <Label fx:id="labelTableDispo" layoutX="450.0" layoutY="450.0" text="Label" visible="false" />
          </children>
       </Pane>
    </center>
